@@ -54,6 +54,15 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+Library/* 
+Logs/* 
+Temp/* 
+.vs/* 
+obj/* 
+ 
+.vsconfig 
+*.sln 
+*.csproj
 
 # Crashlytics generated file
 crashlytics-build.properties
