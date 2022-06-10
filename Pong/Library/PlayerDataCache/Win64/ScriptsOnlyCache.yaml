@@ -2,14 +2,74 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - BallController
+    - GoalController
+    - MainMenuController
     - PaddleController
+    - ScoreManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.Text
   sceneClasses:
+    Assets/Scenes/MainMenu.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1486}
+    - Class: 114
+      Script: {instanceID: 2090}
+    - Class: 114
+      Script: {instanceID: 2446}
+    - Class: 114
+      Script: {instanceID: 2582}
+    - Class: 114
+      Script: {instanceID: 2786}
+    - Class: 114
+      Script: {instanceID: 3006}
+    - Class: 114
+      Script: {instanceID: 3110}
+    - Class: 114
+      Script: {instanceID: 4082}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/SampleScene.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -40,10 +100,26 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16334}
+      Script: {instanceID: 2090}
     - Class: 114
-      Script: {instanceID: 16352}
+      Script: {instanceID: 2446}
+    - Class: 114
+      Script: {instanceID: 2582}
+    - Class: 114
+      Script: {instanceID: 2786}
+    - Class: 114
+      Script: {instanceID: 3006}
+    - Class: 114
+      Script: {instanceID: 3330}
+    - Class: 114
+      Script: {instanceID: 4638}
+    - Class: 114
+      Script: {instanceID: 16584}
+    - Class: 114
+      Script: {instanceID: 16600}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -52,6 +128,12 @@ ScriptsOnlyBuild:
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -290,6 +372,12 @@ ScriptsOnlyBuild:
     className: ContentSizeFitter
   - hash:
       serializedVersion: 2
+      Hash: 1ec07a4e4191ae27837ce4e79e8f7006
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PaddleController
+  - hash:
+      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -410,6 +498,12 @@ ScriptsOnlyBuild:
     className: ControlTrack
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MainMenuController
+  - hash:
+      serializedVersion: 2
       Hash: 3165968ba45c74472d279ba04455fccb
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -470,6 +564,12 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
+      Hash: 6f5c8283e2123aaa0f11b5249add51e3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BallController
+  - hash:
+      serializedVersion: 2
       Hash: 8220b46879dc5e37db1b940c938f5744
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -494,17 +594,18 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
-      Hash: d4b12e4ee9541266ac2681aeef7cb8c2
+      Hash: cf8e0bbfbbb524c9b20b1df09d135262
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: BallController
+    className: ScoreManager
   - hash:
       serializedVersion: 2
-      Hash: 1ec07a4e4191ae27837ce4e79e8f7006
+      Hash: c3d9ee9125e992aa6a695a273c5e12a5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: PaddleController
+    className: GoalController
   platform: 19
   scenePathNames:
+  - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/SampleScene.unity
-  playerPath: D:/Unity/New folder/Build/Pong.exe
+  playerPath: D:/Unity/New folder/Kent-Saputra-149251970101-10-Pong/Pong/Build/0.2/Pong.exe
