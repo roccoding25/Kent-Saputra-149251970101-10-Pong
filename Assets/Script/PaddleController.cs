@@ -10,9 +10,11 @@ public KeyCode downKey;
 
 public KeyCode leftKey; 
 public KeyCode rightKey;
+private Rigidbody2D rb;
  
     private void Start() 
     { 
+        rb = GetComponent<Rigidbody2D>();
     } 
  
     private void Update() 
@@ -49,6 +51,6 @@ public KeyCode rightKey;
     private void MoveObject(Vector2 movement) 
     { 
         Debug.Log("TEST: " + movement); 
-        transform.Translate(movement * Time.deltaTime); 
+        rb.velocity = movement; 
     } 
 }
