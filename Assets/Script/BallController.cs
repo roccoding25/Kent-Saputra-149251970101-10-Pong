@@ -23,5 +23,9 @@ private Rigidbody2D rb;
     { 
         transform.position = new Vector3(resetPosition.x, resetPosition.y, 1); 
         rb.velocity = speed;
-    } 
+    }
+    public void ActivatePUSpeedUp (float magnitude)
+{
+    rb.velocity *= magnitude;
+} 
 }
