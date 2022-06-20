@@ -11,7 +11,7 @@ public class PowerUpManager : MonoBehaviour
     public List<GameObject> powerUpTemplateList;
     private List<GameObject> powerUpList; 
     public int spawnInterval; 
- 
+    private bool PowerUpDuration;
     private float timer; 
     public void GenerateRandomPowerUp() 
     { 

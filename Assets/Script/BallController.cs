@@ -6,7 +6,7 @@ public class BallController : MonoBehaviour
 {
 public Vector2 speed; 
 private Vector2 resetPosition;
-
+private bool lasthitkanan;
 private Rigidbody2D rb;
     private void Start() 
     { 

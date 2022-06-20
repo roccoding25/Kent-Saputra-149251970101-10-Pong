@@ -11,6 +11,8 @@ public KeyCode downKey;
 public KeyCode leftKey; 
 public KeyCode rightKey;
 private Rigidbody2D rb;
+
+public bool kanan;
  
     private void Start() 
     { 

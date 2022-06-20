@@ -12,9 +12,14 @@ public class MainMenuController : MonoBehaviour
 
         public void OpenAuthor() 
     { 
-        Debug.Log("Created By Kent"); 
+        SceneManager.LoadScene("Credit"); 
     } 
        // Start is called before the first frame update
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+    
     void Start()
     {
         
